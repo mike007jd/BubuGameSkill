@@ -55,9 +55,9 @@ Use $bubu-game to improve frame pacing while preserving the current
 resolution, visual detail, effects, and simulation behavior.
 ```
 
-For Claude Code, use the invocation belonging to your installation method followed by the same request.
+For Claude Code, use the invocation belonging to your installation method and supply reference images, for example: `/bubu-game Build a playable prototype from these reference images, preserving their camera, lighting, and visual identity.`
 
-One skill acts as a lightweight coordinator, reading the relevant reference as each concern becomes active. Concept and prototype requests finish at their own deliverables; a full-game request progresses through the stages it needs. Codex concept work uses built-in Image Gen. Other hosts use available image generation or deliver an image brief with generation marked pending.
+One skill acts as a lightweight coordinator, reading the relevant reference as each concern becomes active. Concept and prototype requests finish at their own deliverables; a full-game request progresses through the stages it needs. Codex supports built-in Image Gen for new concepts. Claude Code develops games from supplied reference images, translating their visual qualities into playable scenes. A text-only Claude brief establishes a visual direction and proceeds at the requested scope.
 
 The defaults are Vite + TypeScript for new code, the existing stack for ongoing work, and rendering chosen around the game. Visual quality comes first; performance improvements preserve the chosen treatment and report measured trade-offs. The agent follows the user's language and task scope.
 
@@ -69,7 +69,7 @@ The loop is **play → inspect → improve → verify**. At a complete playable 
 
 上方推荐命令会将同一份 skill 安装到 Codex 与 Claude Code。Codex 使用 `$bubu-game`；Claude 通过 skills CLI 安装后使用 `/bubu-game`，通过原生插件安装后使用 `/bubu-game:bubu-game`。更新命令见各安装方式。
 
-按需进入概念图 → 可玩原型 → 完整开发 → 打磨。只请求概念图或原型时，完成对应阶段就交付；完整开发请求沿用已有成果继续推进。Codex 概念阶段使用内置 Image Gen；其他环境使用可用的出图能力，工具暂缺时交付图像简报并标明待出图。
+按需进入概念图 → 可玩原型 → 完整开发 → 打磨。只请求概念图或原型时，完成对应阶段就交付；完整开发请求沿用已有成果继续推进。Codex 可用内置 Image Gen 出新概念图；Claude Code 根据提供的参考图提取机位、造型、材质、光照与 UI 层次，直接推进原型或游戏。Claude 收到纯文字需求时，先明确视觉方向，再按请求范围开发。
 
 仍然只有一个 skill 入口，按当前任务读取对应参考。新代码默认 Vite + TypeScript，已有项目沿用原栈。默认画质优先，性能优化围绕实际瓶颈展开，并保留选定的视觉效果。
 
@@ -77,6 +77,7 @@ The loop is **play → inspect → improve → verify**. At a complete playable 
 
 ```text
 用 $bubu-game 和 Codex 内置 Image Gen 出雪地探索游戏的概念图，展示实际游玩机位。
+用 /bubu-game 根据这些参考图做可玩原型，保留它们的机位、光照和视觉辨识度。
 用 $bubu-game 把选定概念做成可玩 prototype，验证足迹和抖雪是否有趣。
 用 $bubu-game 做一个小型雪地探索游戏，让足迹和抖雪成为有趣的交互。
 用 $bubu-game 打磨这个游戏的 UI，用图像、短标签和操作反馈帮助玩家理解。
@@ -97,4 +98,4 @@ The craft lessons come from the author's Storm-Race, dustwake, Vibe Basketball, 
 
 Independent artifact review and reference comparison were informed by [Matt Shumer's explanation of the Gauntlet Loop](https://somethingbig.ai/gauntlet-loop). Bubu's instructions are written around these game-development experiences and its own scope-aware playtest workflow. Packaging follows the [Agent Skills specification](https://agentskills.io/specification), [skills CLI](https://github.com/vercel-labs/skills), and [Claude plugin documentation](https://code.claude.com/docs/en/plugins).
 
-MIT · v0.2.0
+MIT · v0.2.1

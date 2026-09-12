@@ -1,6 +1,6 @@
 ---
 name: bubu-game
-description: Create game concepts with image generation, test playable prototypes, and build or polish browser games. Use for game concept art, core gameplay, UI/UX, visuals, VFX, and performance work.
+description: Develop game concepts from reference images or Codex image generation, test playable prototypes, and build or polish browser games. Use for game concept art, core gameplay, UI/UX, visuals, VFX, and performance work.
 ---
 
 # Bubu Game
@@ -13,7 +13,7 @@ Read the reference relevant to the current action; load another when its concern
 
 | Request | Reference |
 | --- | --- |
-| Concept art, visual exploration, image generation | [Concept](references/concept.md) |
+| Reference images, concept art, visual exploration, image generation | [Concept](references/concept.md) |
 | Playable prototype, full build, gameplay changes | [Gameplay](references/gameplay.md) |
 | Intuitive interactions, concise UI, onboarding | [UI/UX](references/ui-ux.md) |
 | Art, camera, materials, lighting, VFX, sound, post-processing | [Visuals](references/visuals.md) |

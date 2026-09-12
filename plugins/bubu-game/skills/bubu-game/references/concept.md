@@ -1,11 +1,17 @@
 # Concept
 
-Turn the idea into a visible gameplay direction before implementing a new game. Reuse a supplied direction when continuing an established project.
+Define the player's action, its satisfying consequence, the intended camera, and one moment worth showing. Reuse an established visual direction when continuing a project.
 
-Define the player's action, its satisfying consequence, the intended camera, and one moment worth showing. In Codex, use the built-in Image Gen tool and its available imagegen skill to generate a concept image. Inspect the current tool schema and follow its generation/editing workflow. In another host, use an available image-generation capability. Whenever generation is unavailable, deliver a concrete image brief and existing references, and mark image generation pending. Use an API/CLI fallback when the user chooses that route.
+## Reference images
 
-Frame the image as a plausible gameplay view: readable player and targets, usable play space, clear material and light hierarchy, and room for the essential HUD. Express the prompt through desired subjects, composition, style, and interactions. Generate one representative direction; add a focused variant when a meaningful visual decision needs comparison. Inspect local input images before editing them.
+In Claude Code, develop the game from supplied reference images. Inspect the actual images and identify their camera, silhouettes, palette, materials, lighting, and UI hierarchy. Assign each image a role when several references are supplied. Translate the defining qualities into concrete targets for the playable scene and carry them into the requested prototype or build. For a text-only brief, establish a concise visual direction and proceed at the requested scope. Codex can follow this same reference-based route.
 
-Show the actual output. Check gameplay-distance legibility, visual identity, and how the composition supports the core action. Refine the largest visible mismatch. Copy selected project-bound images into the workspace and record their paths and prompts; label them as concepts. Record playable behavior and performance through a subsequent running prototype.
+## Codex image generation
 
-A concept request is complete when the requested images and a short direction note are delivered. If choosing a direction requires the user's decision, present the images for that decision. For an authorized prototype or full build, carry the selected direction into a playable experiment.
+When creating new concept images in Codex, use built-in Image Gen and its available imagegen skill. Follow the current tool schema and inspect local input images before editing. Frame a plausible gameplay view with readable subjects, usable play space, clear lighting, and room for the essential HUD. Express desired subjects, composition, style, and interactions positively. Generate one direction; add a focused variant when a meaningful decision needs comparison.
+
+Show and inspect the actual output. Refine the largest mismatch in legibility, identity, or support for the core action. Copy selected project-bound images into the workspace and record paths and prompts. If requested generation is unavailable, deliver the image brief and mark the images pending.
+
+## Completion
+
+Complete reference-based concept work with a short visual direction and observable scene targets; include generated images when requested. Present direction choices when the user needs to decide. For authorized prototype or build work, continue into a playable experiment and compare its actual frames with the references. Establish gameplay and performance through the running artifact.
