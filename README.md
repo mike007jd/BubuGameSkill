@@ -2,7 +2,7 @@
 
 **One compact skill for beautiful, satisfying web games.**
 
-Explore a concept, test a playable prototype, build the game, and refine the real experience with the **Bubu Playtest Loop**. Start at the requested stage. Works with Codex and Claude Code.
+Explore a concept, test a playable prototype, build the game, and refine the real experience with the **Bubu Playtest Loop**. Start at the requested stage. Installs in Codex and Claude Code; the end-to-end gameplay trial has run in Codex, while Claude Code coverage is install and routing validation.
 
 ## Install
 
@@ -91,11 +91,13 @@ Bubu Playtest Loop 从正常入口实玩，每轮修复最影响体验的差距�
 - [SKILL.md](plugins/bubu-game/skills/bubu-game/SKILL.md): stage routing and the shared playtest loop / 阶段路由与实玩迭代。
 - [Concept](plugins/bubu-game/skills/bubu-game/references/concept.md): image generation and visual direction / 概念图与视觉方向。
 - [Gameplay](plugins/bubu-game/skills/bubu-game/references/gameplay.md): prototype experiments and full builds / 原型验证与完整开发。
-- [UI/UX](plugins/bubu-game/skills/bubu-game/references/ui-ux.md), [visuals](plugins/bubu-game/skills/bubu-game/references/visuals.md), [performance](plugins/bubu-game/skills/bubu-game/references/performance.md): focused craft references / 按需读取的专项参考。
+- [UI/UX](plugins/bubu-game/skills/bubu-game/references/ui-ux.md), [visuals](plugins/bubu-game/skills/bubu-game/references/visuals.md), [performance](plugins/bubu-game/skills/bubu-game/references/performance.md): focused craft references with starting numbers and "Done when" lists / 带起始数值和完成定义的专项参考。
+- [Review brief](plugins/bubu-game/skills/bubu-game/references/review-brief.md): the fresh-reviewer template / 独立评审模板。
+- [scripts](plugins/bubu-game/skills/bubu-game/scripts): `journey-check.mjs` journey template and `perf-sample.mjs` frame sampler / 旅程检查模板与帧采样脚本。
 - One shared skill, two thin plugin manifests, and installation metadata / 一份技能正文、两端轻量插件包装。
 
-The craft lessons come from the author's Storm-Race, dustwake, Vibe Basketball, cavy-cottage, Dragon River Xiangqi, Qingming Riverside, and bearsnow projects. Qingming and bearsnow contribute visual/simulation and profiling lessons; their performance work is ongoing. The public package contains distilled instructions and general examples.
+The craft lessons come from the author's Storm-Race, dustwake, Vibe Basketball, cavy-cottage, Dragon River Xiangqi, Qingming Riverside, and bearsnow projects, distilled into the references as concrete rules rather than project names.
 
 Independent artifact review and reference comparison were informed by [Matt Shumer's explanation of the Gauntlet Loop](https://somethingbig.ai/gauntlet-loop). Bubu's instructions are written around these game-development experiences and its own scope-aware playtest workflow. Packaging follows the [Agent Skills specification](https://agentskills.io/specification), [skills CLI](https://github.com/vercel-labs/skills), and [Claude plugin documentation](https://code.claude.com/docs/en/plugins).
 
-MIT · v0.2.1
+MIT · v0.3.0

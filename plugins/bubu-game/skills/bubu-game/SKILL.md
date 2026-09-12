@@ -18,8 +18,9 @@ Read the reference relevant to the current action; load another when its concern
 | Intuitive interactions, concise UI, onboarding | [UI/UX](references/ui-ux.md) |
 | Art, camera, materials, lighting, VFX, sound, post-processing | [Visuals](references/visuals.md) |
 | Frame pacing, loading, resource use | [Performance](references/performance.md) |
+| Independent review at a milestone | [Review brief](references/review-brief.md) |
 
-Set a concrete bar: the core action and payoff, an inspectable visual or playable reference, and observable completion criteria for this stage. For an underspecified brief, choose a direction and state assumptions. Ask when a consequential decision needs the user's input.
+Set a concrete bar: the gameplay brief's verb and core loop, an inspectable visual or playable reference, and the stage's "Done when" list from its reference, written as pass/fail criteria before building. For an underspecified brief, choose a direction and state assumptions. Ask when a consequential decision needs the user's input.
 
 Use the existing stack; default new code to Vite + TypeScript with rendering suited to the interaction. Check version-sensitive APIs against installed packages and current official documentation. Prioritize the chosen visual quality and measure performance in the actual running game. Label targets, historical measurements, and current results separately.
 
@@ -29,7 +30,7 @@ Apply this loop to playable prototypes, builds, and polish. Evaluate concept ima
 
 1. Enter normally, perform the core journey, and inspect actual pixels, continuous actions, and sound against the bar.
 2. Improve the largest concrete gap as one coherent batch. Then run affected existing checks and the necessary build or smoke test.
-3. At the first complete playable version and important polish milestones, delegate to a fresh reviewer with the goal, criteria, reference, and actual artifact as its complete context. Request independent observations from the running game. Use anonymous A/B when comparable artifacts permit it.
+3. At the first complete playable version and important polish milestones, delegate to a fresh reviewer using the [review brief](references/review-brief.md). Request independent observations from the running game. Use anonymous A/B when comparable artifacts permit it.
 4. Feed findings into the next batch until the stage's criteria pass. At a user budget limit or external blocker, deliver the current artifact, evidence, and remaining gap.
 
-Use existing browser, test, and delegation capabilities. When a tool is unavailable, complete accessible checks and specify what remains unverified. Distinguish scripted checks, agent play, human feedback, and concept images. Keep evidence in the project's existing progress record, adding one short record when needed.
+Use existing browser, test, and delegation capabilities; `scripts/journey-check.mjs` is a journey template to adapt and `scripts/perf-sample.mjs` measures a running URL. When a tool is unavailable, complete accessible checks and specify what remains unverified. Distinguish scripted checks, agent play, human feedback, and concept images. Keep evidence in the project's existing progress record, adding one short record when needed.
