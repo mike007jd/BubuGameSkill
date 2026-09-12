@@ -1,7 +1,7 @@
 {
   "name": "bubu-game",
-  "version": "0.1.0",
-  "description": "Build and refine beautiful, satisfying web games with the Bubu Playtest Loop.",
+  "version": "0.2.0",
+  "description": "Explore concepts, prototype, build, and polish web games with the Bubu Playtest Loop.",
   "author": {
     "name": "mike007jd",
     "url": "https://github.com/mike007jd"
@@ -12,11 +12,11 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Bubu Game",
-    "shortDescription": "Build beautiful games. Play, inspect, refine.",
-    "longDescription": "One compact skill for playable foundations, distinctive art, intuitive UI, responsive effects, and quality-preserving performance work. Ground each iteration in the running game and independent review.",
+    "shortDescription": "Concept, prototype, build, and polish games.",
+    "longDescription": "One compact coordinator for concept images, playable experiments, full games, and focused polish. Read relevant craft references as needed and ground playable milestones in independent review.",
     "developerName": "mike007jd",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
-    "defaultPrompt": ["Use $bubu-game to build or refine a beautiful game with a complete playable loop."]
+    "defaultPrompt": ["Use $bubu-game for this game's next stage: concept, prototype, build, or polish."]
   }
 }
