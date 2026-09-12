@@ -1,0 +1,16 @@
+{
+  "name": "bubu-game",
+  "owner": {
+    "name": "mike007jd"
+  },
+  "plugins": [
+    {
+      "name": "bubu-game",
+      "source": "./plugins/bubu-game",
+      "description": "One compact skill for beautiful, satisfying web games."
+    }
+  ],
+  "metadata": {
+    "description": "One compact skill for beautiful, satisfying web games."
+  }
+}

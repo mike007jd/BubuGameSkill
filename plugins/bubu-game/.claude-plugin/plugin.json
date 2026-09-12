@@ -1,0 +1,12 @@
+{
+  "name": "bubu-game",
+  "version": "0.1.0",
+  "description": "Build and refine beautiful, satisfying web games with the Bubu Playtest Loop.",
+  "author": {
+    "name": "mike007jd",
+    "url": "https://github.com/mike007jd"
+  },
+  "homepage": "https://github.com/mike007jd/BubuGameSkill",
+  "repository": "https://github.com/mike007jd/BubuGameSkill",
+  "license": "MIT"
+}

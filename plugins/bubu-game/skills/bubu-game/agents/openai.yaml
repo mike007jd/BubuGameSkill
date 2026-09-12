@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bubu Game"
+  short_description: "Build and refine beautiful, satisfying web games"
+  default_prompt: "Use $bubu-game to build or refine this game with a distinctive visual style and a complete playable loop."
