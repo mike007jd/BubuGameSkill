@@ -92,8 +92,7 @@ Bubu Playtest Loop 从正常入口实玩，每轮修复最影响体验的差距�
 - [Concept](plugins/bubu-game/skills/bubu-game/references/concept.md): image generation and visual direction / 概念图与视觉方向。
 - [Gameplay](plugins/bubu-game/skills/bubu-game/references/gameplay.md): prototype experiments and full builds / 原型验证与完整开发。
 - [UI/UX](plugins/bubu-game/skills/bubu-game/references/ui-ux.md), [visuals](plugins/bubu-game/skills/bubu-game/references/visuals.md), [performance](plugins/bubu-game/skills/bubu-game/references/performance.md): focused craft references with starting numbers and "Done when" lists / 带起始数值和完成定义的专项参考。
-- [Review brief](plugins/bubu-game/skills/bubu-game/references/review-brief.md): the fresh-reviewer template / 独立评审模板。
-- [scripts](plugins/bubu-game/skills/bubu-game/scripts): `journey-check.mjs` journey template and `perf-sample.mjs` frame sampler / 旅程检查模板与帧采样脚本。
+- [scripts](plugins/bubu-game/skills/bubu-game/scripts): `journey-check.mjs` journey template / 旅程检查模板与帧采样脚本。
 - One shared skill, two thin plugin manifests, and installation metadata / 一份技能正文、两端轻量插件包装。
 
 The craft lessons come from the author's Storm-Race, dustwake, Vibe Basketball, cavy-cottage, Dragon River Xiangqi, Qingming Riverside, and bearsnow projects, distilled into the references as concrete rules rather than project names.

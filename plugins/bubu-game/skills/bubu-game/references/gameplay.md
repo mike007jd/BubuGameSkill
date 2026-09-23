@@ -31,7 +31,7 @@ Expand the proven interaction into entry, core play, pause/resume, and replay or
 
 Show loading progress, actionable failures, and retry. Keep displayed success consistent with the actual rules. For persistent progress or rewards, validate saved data and repeated settlement. Nested panels (inventory inside pause, shop inside inventory) return to play with the pause and progress state the player expects; own that state in one place.
 
-Bring in UI, visual, and performance references as those concerns become active.
+Bring in UI and visual references as those concerns become active.
 
 ## Done when
 
