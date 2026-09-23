@@ -1,6 +1,6 @@
 ---
 name: bubu-game
-description: Develop game concepts from reference images or Codex image generation, test playable prototypes, and build or polish browser games. Use for game concept art, core gameplay, UI/UX, visuals, VFX, and performance work.
+description: Develop game concepts from reference images or Codex image generation, test playable prototypes, and build or polish browser games. Use for game concept art, core gameplay, UI/UX, visuals, and VFX.
 ---
 
 # Bubu Game
