@@ -1,39 +1,34 @@
 # Gameplay
 
-## Prototype
+## Prototype around the uncertain claim
 
-Choose the riskiest question from the gameplay brief: does the verb feel satisfying, does a choice change the outcome, does the camera make interaction readable. State the observation that would answer it before building. Build one short repeatable encounter with ordinary input, immediate feedback, and instant retry. Keep the concept's camera, silhouette, and mood visible at prototype fidelity.
+Choose the riskiest question from the brief: does the core action feel satisfying, does a choice change what happens, or can the camera make the interaction readable? State the observation that would answer it before building. Make one short repeatable encounter with ordinary input, the essential payoff and a clear way to try again.
 
-Test a small set of meaningful choices when choice is the hypothesis: two or three options whose outcomes visibly differ. When the loop is the hypothesis, connect action, feedback, growth, and another attempt in one build. When physical contact is the hypothesis, make input, contact animation, sound, and the authoritative outcome fire on the same frame. Exercise repeated, interrupted, and overlapping actions.
+Keep the intended camera, silhouette and mood visible at prototype fidelity. Compare meaningful alternatives when choice is the question. When the loop is the question, connect action, feedback, consequence and another action in the same artifact. Exercise repetition or interruption when they can change the claimed behavior.
 
-## Feel numbers
+For full-game and cross-disciplinary work, use [Workflow](workflow.md). For longer-session depth, use [Content](content.md).
 
-Start from these and tune by playing; record the final values.
+## Tune from observable feel
 
-| Concern | Starting value |
-| --- | --- |
-| Time to first meaningful feedback after entry | ≤ 3 s |
-| Input buffer (press accepted slightly early) | 100–150 ms |
-| Coyote time (act slightly after leaving ground/edge) | 80–120 ms |
-| Hit-stop on impactful contact | 50–120 ms |
-| Screen shake | ≤ 6 px, decays in 150–300 ms |
-| Squash/stretch on impact or launch | 10–20 %, returns in 100–200 ms |
-| Retry after fail | ≤ 1 s, one press |
-| Difficulty ramp | a new pressure every 20–40 s of play |
+Use the [feel criteria](quality.md#game-feel-and-sound) to record input availability, acknowledgment, judgment, contact, feedback and readiness for the next action. A legal input should have a readable response. Keep visible success consistent with actual rules.
 
-## Time policy
+Choose input buffering, forgiving windows, hit-stop, shake, secondary motion and retry timing for the genre and action. Measure their delay/duration when that helps diagnose the observed issue; preserve the player's reading and response window. Stronger feedback is useful only when its hierarchy and consequence remain clear. A quiet puzzle action and a heavy combat hit should not inherit the same preset.
 
-Simulate on a fixed step with an accumulator (1/60 s; clamp a single frame's elapsed time to 0.25 s so a stall never explodes the simulation) and render the interpolated state. Round timers, spawn clocks, and deadlines advance on elapsed wall-clock time so a stalled tab still ends the round on schedule. Cosmetic animation may use the clamped frame delta.
+When physical contact carries the outcome, align its perceptual event sequence with authoritative judgment. Delayed presentation may be intentional; avoid a visual/sound sequence that contradicts the action or blocks legal continuation unexpectedly.
 
-## Build
+## Time and boundaries
 
-Expand the proven interaction into entry, core play, pause/resume, and replay or continued exploration. Give simulation state, input, rendering, and UI clear ownership: one module owns game state and is the only writer. Clear held inputs at every mode boundary; pause on focus loss; release audio, timers, and GPU resources on restart or scene replacement.
+Respect the project's simulation model. Identify gameplay time, presentation time and any real-world deadline separately, and define which advance during pause, focus loss or a stall. Choose a stable step/interpolation policy where the mechanics require it; neither a browser wall-clock deadline nor one fixed frequency is a universal policy for every game.
 
-Show loading progress, actionable failures, and retry. Keep displayed success consistent with the actual rules. For persistent progress or rewards, validate saved data and repeated settlement. Nested panels (inventory inside pause, shop inside inventory) return to play with the pause and progress state the player expects; own that state in one place.
+Observe ordinary mode boundaries: loading, entering play, interruption, pause/resume, nested panels, failure/success and continuation. Clear inappropriate held input and residual effects, preserve intended progress and return to a usable state. Source inspection can reveal ownership or lifecycle faults; it does not alone establish that the transition feels correct.
 
-Bring in UI and visual references as those concerns become active.
+## Expand to the requested game
+
+Connect the intended entry, normal play, supporting screens and continuation through real player routes. Give loading a truthful state and actionable failures a useful return/retry. Keep identity, rules, costs and rewards coherent across transitions.
+
+Inspect first payoff, middle and later demand using the relevant [content criteria](quality.md#content-and-experience). Expand choices and encounters around observed missing variety, pacing or motivation rather than a preset list of systems. Bring UI and visual craft references in when those concerns become active.
 
 ## Done when
 
-- **Prototype**: a playable artifact, the observed answer to the hypothesis with evidence, tuned feel numbers, and the most useful next decision. A prototype request ends here.
-- **Build**: the full journey passes a scripted run of [journey-check](../scripts/journey-check.mjs) adapted to the game, plus the Bubu Playtest Loop at the agreed bar.
+- **Prototype:** the requested experiment is playable, its hypothesis has an observed answer with evidence, and the useful next decision is clear. A prototype request finishes here.
+- **Build:** the connected ordinary journey meets the agreed gameplay and presentation criteria for the requested scope. Report unobserved later-session or human experience explicitly. When scripted verification is requested, adapt [journey-check](../scripts/journey-check.mjs) to the browser game or use the existing native checks; tests and builds are not automatic completion gates.

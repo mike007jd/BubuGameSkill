@@ -1,4 +1,4 @@
 interface:
   display_name: "Bubu Game"
-  short_description: "Concept, prototype, build, and polish web games"
+  short_description: "Game quality, playable production, and polish"
   default_prompt: "Use $bubu-game for this game's next stage: concept, prototype, build, or polish."

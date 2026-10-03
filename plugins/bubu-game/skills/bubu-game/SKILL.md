@@ -1,28 +1,32 @@
 ---
 name: bubu-game
-description: Develop game concepts from reference images or Codex image generation, test playable prototypes, and build or polish browser games. Use for game concept art, core gameplay, UI/UX, visuals, and VFX.
+description: Develop game concepts and playable games, improve visual and content quality, and organize game-development workflows. Use for browser games and existing native games, core gameplay, game feel, UI/UX, art, VFX, and sound.
 ---
 
 # Bubu Game
 
-Coordinate the requested stage: concept, prototype, build, or polish. Start a new idea with a visual direction; add a playable experiment for prototype and full-build requests. Continue existing work from its current stage. Complete the stage the user requested. Carry a full-game request through the stages it needs, reusing established decisions and artifacts.
+Complete the requested stage: concept, prototype, build, or polish. Continue from the current artifact and accepted direction. A full-game request includes the stages it needs; a concept or prototype request ends at that stage's useful deliverable.
 
-## Route the work
+## Set the target
 
-Read the reference relevant to the current action; load another when its concern becomes active.
+Connect the player verb and intended experience to a visible or playable target. Use the existing stack; default new browser games to Vite + TypeScript with rendering suited to the interaction. State reasonable assumptions for an underspecified brief and ask only for consequential missing decisions.
 
-| Request | Reference |
+Use [Quality](references/quality.md) to choose the relevant visual, content, feel and journey criteria. Record the observation conditions, target/reference, current gap and next change. Set numerical targets for this game rather than importing a previous project's score or timing. For full games or revisions across several disciplines, follow [Workflow](references/workflow.md), entering at the current stage.
+
+## Route the craft
+
+| Current concern | Reference |
 | --- | --- |
-| Reference images, concept art, visual exploration, image generation | [Concept](references/concept.md) |
-| Playable prototype, full build, gameplay changes | [Gameplay](references/gameplay.md) |
-| Intuitive interactions, concise UI, onboarding | [UI/UX](references/ui-ux.md) |
-| Art, camera, materials, lighting, VFX, sound, post-processing | [Visuals](references/visuals.md) |
+| Reference images, concept art, visual direction | [Concept](references/concept.md) |
+| Playable experiment, core action, timing, full build | [Gameplay](references/gameplay.md) |
+| Effective choices, variety, progression, pacing and motivation | [Content](references/content.md) |
+| Affordances, onboarding, information and navigation | [UI/UX](references/ui-ux.md) |
+| Models, camera, materials, lighting, animation, VFX and sound | [Visuals](references/visuals.md) |
 
-Set a concrete bar: the gameplay brief's verb and core loop, an inspectable visual or playable reference, and the stage's "Done when" list from its reference, written as pass/fail criteria before building. For an underspecified brief, choose a direction and state assumptions. Ask when a consequential decision needs the user's input.
-
-Use the existing stack; default new code to Vite + TypeScript with rendering suited to the interaction. Check version-sensitive APIs against installed packages and current official documentation. Performance is not a concern while the game is unfinished; look at it only when the user reports stutter.
+Load another craft reference when its concern becomes active. Keep the selected style, rules and scope coherent across contributions. Check version-sensitive APIs against installed packages and current official documentation. Investigate performance when the user reports stutter; preserve the selected treatment when optimizing.
 
 ## Bubu Playtest Loop
 
-1. Play the core journey in the running game and look at the actual pixels, motion and sound.
-2. Fix the biggest gap, run the directly affected tests and build, and keep going.
+Inspect the ordinary journey at the agreed bar, fix the largest observed gap, and inspect the affected experience again. Use actual pixels, continuous motion and listening for the corresponding claims. Source inspection, scripted play and human feedback establish different things; name the evidence and unobserved limits.
+
+Run tests and builds when the user requests them. Honor the user's completion bar and budget; deliver the artifact, observed changes and specific remaining work without inventing additional gates.

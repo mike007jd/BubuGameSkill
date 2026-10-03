@@ -1,8 +1,8 @@
 # Bubu Game
 
-**One compact skill for beautiful, satisfying web games.**
+**One compact skill for beautiful, satisfying games.**
 
-Explore a concept, test a playable prototype, build the game, and refine the real experience with the **Bubu Playtest Loop**. Start at the requested stage. Installs in Codex and Claude Code; the end-to-end gameplay trial has run in Codex, while Claude Code coverage is install and routing validation.
+Develop the requested concept, prototype, build, or polish stage with general game-quality criteria and a practical production workflow. Installs in Codex and Claude Code.
 
 ## Install
 
@@ -39,64 +39,42 @@ Invoke `/bubu-game:bubu-game`. Update with `claude plugin marketplace update bub
 ## Use it
 
 ```text
-Use $bubu-game to explore a snow-exploration game concept with Codex's
-built-in Image Gen. Deliver a gameplay-view concept and a short direction note.
+Use $bubu-game to build this game from the existing brief and references.
+Set observable targets for the ordinary gameplay view and core player loop.
 
-Use $bubu-game to prototype the chosen concept. Test whether leaving
-tracks and shaking off snow makes exploration satisfying.
+Use $bubu-game to critique the visual quality of this running game.
+Judge composition, identity, materials, camera, effects and continuous motion.
 
-Use $bubu-game to build a small night-market delivery game.
-Make the driving feel satisfying and the street lighting memorable.
+Use $bubu-game to improve content depth and game feel.
+Find the largest gap in meaningful choices, payoff, pacing or feedback first.
 
-Use $bubu-game to make this game's interface intuitive and concise.
-Use visual choices and teach through actions.
-
-Use $bubu-game to improve frame pacing while preserving the current
-resolution, visual detail, effects, and simulation behavior.
+Use $bubu-game to organize production across gameplay, art and UI.
+Split independent work, integrate generated assets and finish the requested scope.
 ```
 
-For Claude Code, use the invocation belonging to your installation method and supply reference images, for example: `/bubu-game Build a playable prototype from these reference images, preserving their camera, lighting, and visual identity.`
+For Claude Code, use the invocation belonging to your installation method and provide the same brief or reference images.
 
-One skill acts as a lightweight coordinator, reading the relevant reference as each concern becomes active. Concept and prototype requests finish at their own deliverables; a full-game request progresses through the stages it needs. Codex supports built-in Image Gen for new concepts. Claude Code develops games from supplied reference images, translating their visual qualities into playable scenes. A text-only Claude brief establishes a visual direction and proceeds at the requested scope.
+The skill keeps one compact entrypoint. [Quality](plugins/bubu-game/skills/bubu-game/references/quality.md) provides **27 selectable criteria**: visuals (9), content/experience (8), feel/sound (5), player journey/UI (5). Each criterion names observable evidence and failure signals. Targets belong to the game, viewport, interaction and accepted direction; there is no universal screen ratio, timing, win rate or review score.
 
-The defaults are Vite + TypeScript for new code, the existing stack for ongoing work, and rendering chosen around the game. Visual quality comes first; performance improvements preserve the chosen treatment and report measured trade-offs. The agent follows the user's language and task scope.
+[Workflow](plugins/bubu-game/skills/bubu-game/references/workflow.md) connects current-state diagnosis, direction, a representative playable slice, owned parallel production, source/asset integration, correction and delivery. Enter at the current stage; a narrow fix does not need the whole process. An existing direction stays in force until actual feedback changes it.
 
-The loop is **play → inspect → improve → verify**. At a complete playable version and important polish milestones, a fresh reviewer inspects the actual artifact against explicit criteria. Iteration ends when the requested criteria pass, or hands over specific remaining work at a user budget limit or external blocker. Browser access and delegation use capabilities already available in the host; evidence identifies any outstanding checks.
+The Bubu Playtest Loop is inspect the ordinary experience → fix the largest observed gap → inspect the affected result. Pixels, continuous motion, listening and player behavior answer different questions. Source checks and scripted routes are useful evidence, while human understanding and enjoyment remain separate observations. Tests and builds run when the user requests them; independent critics and full-run matrices are not automatic gates.
+
+New browser games default to Vite + TypeScript. Existing browser/native projects keep their stack. The craft references supply focused guidance for concept, gameplay, content, UI and visuals; engine migrations, publishing and extra systems are not implied by a quality task.
 
 ## 中文
 
-**一个精简 skill，把游戏做得好看、好玩、容易上手。**
+一个入口，按当前阶段把游戏做到用户要求的程度。通用标准覆盖画面、内容与体验、手感与声音、UI旅程，写清楚看什么、怎么观察、怎样发现不足，不把某个项目的7.5/8分、屏占比、秒数或胜率推广成所有游戏门槛。
 
-上方推荐命令会将同一份 skill 安装到 Codex 与 Claude Code。Codex 使用 `$bubu-game`；Claude 通过 skills CLI 安装后使用 `/bubu-game`，通过原生插件安装后使用 `/bubu-game:bubu-game`。更新命令见各安装方式。
+工作流从现有产物继续：定位实际差距 → 明确方向和可观察目标 → 做代表性可玩切片 → 独立部分并行 → 整合源码、生成资产和普通入口 → 修最大问题 → 完成完整需求 → 交付或从真实断点续接。已定方向沿用，小改不强制跑整套流程。测试/build按用户请求，默认不要求独立评审、长审计或重复全量验收。
 
-按需进入概念图 → 可玩原型 → 完整开发 → 打磨。只请求概念图或原型时，完成对应阶段就交付；完整开发请求沿用已有成果继续推进。Codex 可用内置 Image Gen 出新概念图；Claude Code 根据提供的参考图提取机位、造型、材质、光照与 UI 层次，直接推进原型或游戏。Claude 收到纯文字需求时，先明确视觉方向，再按请求范围开发。
 
-仍然只有一个 skill 入口，按当前任务读取对应参考。新代码默认 Vite + TypeScript，已有项目沿用原栈。默认画质优先，性能优化围绕实际瓶颈展开，并保留选定的视觉效果。
+## Contents
 
-例如：
+- [SKILL.md](plugins/bubu-game/skills/bubu-game/SKILL.md): stage scope and routing.
+- [Quality](plugins/bubu-game/skills/bubu-game/references/quality.md): criteria, observation methods and evidence limits.
+- [Workflow](plugins/bubu-game/skills/bubu-game/references/workflow.md): production outputs, integration and correction.
+- [Concept](plugins/bubu-game/skills/bubu-game/references/concept.md), [Gameplay](plugins/bubu-game/skills/bubu-game/references/gameplay.md), [Content](plugins/bubu-game/skills/bubu-game/references/content.md), [UI/UX](plugins/bubu-game/skills/bubu-game/references/ui-ux.md), [Visuals](plugins/bubu-game/skills/bubu-game/references/visuals.md): craft references loaded as relevant.
+- [Journey template](plugins/bubu-game/skills/bubu-game/scripts/journey-check.mjs): browser route template, adapted and run only when appropriate and requested.
 
-```text
-用 $bubu-game 和 Codex 内置 Image Gen 出雪地探索游戏的概念图，展示实际游玩机位。
-用 /bubu-game 根据这些参考图做可玩原型，保留它们的机位、光照和视觉辨识度。
-用 $bubu-game 把选定概念做成可玩 prototype，验证足迹和抖雪是否有趣。
-用 $bubu-game 做一个小型雪地探索游戏，让足迹和抖雪成为有趣的交互。
-用 $bubu-game 打磨这个游戏的 UI，用图像、短标签和操作反馈帮助玩家理解。
-用 $bubu-game 保留当前画质优化性能，提交相同机位和设置下的实测对照。
-```
-
-Bubu Playtest Loop 从正常入口实玩，每轮修复最影响体验的差距，并在关键阶段加入独立评审。达到目标后结束；预算到限或遇到外部阻塞时，交付成果、证据和明确的后续事项。自动检查、代理试玩和真人反馈按实际来源记录。
-
-## Contents and sources · 内容与来源
-
-- [SKILL.md](plugins/bubu-game/skills/bubu-game/SKILL.md): stage routing and the shared playtest loop / 阶段路由与实玩迭代。
-- [Concept](plugins/bubu-game/skills/bubu-game/references/concept.md): image generation and visual direction / 概念图与视觉方向。
-- [Gameplay](plugins/bubu-game/skills/bubu-game/references/gameplay.md): prototype experiments and full builds / 原型验证与完整开发。
-- [UI/UX](plugins/bubu-game/skills/bubu-game/references/ui-ux.md), [visuals](plugins/bubu-game/skills/bubu-game/references/visuals.md), [performance](plugins/bubu-game/skills/bubu-game/references/performance.md): focused craft references with starting numbers and "Done when" lists / 带起始数值和完成定义的专项参考。
-- [scripts](plugins/bubu-game/skills/bubu-game/scripts): `journey-check.mjs` journey template / 旅程检查模板与帧采样脚本。
-- One shared skill, two thin plugin manifests, and installation metadata / 一份技能正文、两端轻量插件包装。
-
-The craft lessons come from the author's Storm-Race, dustwake, Vibe Basketball, cavy-cottage, Dragon River Xiangqi, Qingming Riverside, and bearsnow projects, distilled into the references as concrete rules rather than project names.
-
-Independent artifact review and reference comparison were informed by [Matt Shumer's explanation of the Gauntlet Loop](https://somethingbig.ai/gauntlet-loop). Bubu's instructions are written around these game-development experiences and its own scope-aware playtest workflow. Packaging follows the [Agent Skills specification](https://agentskills.io/specification), [skills CLI](https://github.com/vercel-labs/skills), and [Claude plugin documentation](https://code.claude.com/docs/en/plugins).
-
-MIT · v0.3.0
+One shared skill, thin Codex/Claude plugin packaging. MIT · v0.4.0

@@ -7,10 +7,10 @@
     {
       "name": "bubu-game",
       "source": "./plugins/bubu-game",
-      "description": "One compact skill for beautiful, satisfying web games."
+      "description": "One compact skill for game quality and practical game production."
     }
   ],
   "metadata": {
-    "description": "One compact skill for beautiful, satisfying web games."
+    "description": "One compact skill for game quality and practical game production."
   }
 }
